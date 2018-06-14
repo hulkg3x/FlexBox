@@ -111,5 +111,60 @@ div {
 - Por exemplo:
 
 ```
-- se o container tiver 1000px, e suas 5 divs dentro do container ocupar cada um 100px, voce irá de fato espaçar entre as 5. 200px para cada. Caso tiver 500px no container. De fato nao irá conseguir espaçar os elementos entre si.
+- se o container tiver 1000px, e suas 5 divs dentro do container ocupar cada um 100px, voce irá de fato espaçar entre as 5. Caso tiver 500px no container. De fato nao irá conseguir espaçar os elementos entre si.
 ```
+
+> Podemos aumentar o tamanho dos elementos .
+
+- Usando ```flex-grow:``` com numero que varia de 1 a 1000.
+
+```css
+  div {
+    flex-grow: 1;
+  }
+```
+
+<p align="center">
+<img src="https://s3.amazonaws.com/caelum-online-public/1_flexbox/5_12+mostrando+os+itens.png" width="500">
+
+- Cada elemento recebeu o mesmo tanto de ```px``` conforme o elemento pai.
+- Portanto, o ```flex-grow``` serve para aumentar objetos e seu padrão é ```flex-grow``` de valor ```0```.
+
+> E temos também o ```flex-shrink```, que serve para diminuir os objetos
+
+```css
+  div {
+    flex-shrink: 1;
+  }
+```
+
+- Todos os elementos que tiver essa propriedade se diminuirá por igual.
+
+- podemos fazer com que um elemento especifico se diminuia 2x mais que os outros. Por exemplo
+
+```css
+  div p {
+    flex-grow: 2;
+  }
+```
+- Usando um numero a mais.
+
+- O último ponto é que, se quisermos definir tanto o ```flex-shrink``` quanto o ```flex-grow``` juntos podemos utilizar o atalho do ```flex```, por padrão o primeiro valor equivale ao ```grow```  e o segundo ao ```shrink:```
+
+```css
+  div {
+    flex: 1 1;
+  }
+```
+
+- O ```flex-basis``` é como se fosse um ```width``` da vida.
+
+ > E podemos usar junto com o ```flex-grow``` e o ```flex-shrink```.
+
+```css
+ .flexItem {
+    flex: 0 1 25%;
+}
+```
+
+- Resumindo a ordem primeiro sempre vem o ```flex-grow```, depois o ```flex-shrink``` e por ultimo podemos definir o ```flex-basis``` com ```%``` ou ```px```.
