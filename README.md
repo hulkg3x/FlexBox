@@ -168,3 +168,8 @@ div {
 ```
 
 - Resumindo a ordem primeiro sempre vem o ```flex-grow```, depois o ```flex-shrink``` e por ultimo podemos definir o ```flex-basis``` com ```%``` ou ```px```.
+
+
+### Para um conceito melhor com mais explicações podemos acessar esse link: 
+
+- <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> CSS TRICKS flexbox </a>
