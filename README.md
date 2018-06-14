@@ -144,7 +144,7 @@ div {
 
 ```css
   div p {
-    flex-grow: 2;
+    flex-shrink: 2;
   }
 ```
 - Usando um numero a mais.
